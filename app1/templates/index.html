@@ -1,0 +1,15 @@
+<form action="models.py" method="POST">
+    <label for="title">title</label>
+    <input type="text" name="title" id="title" required>
+    <label for="description" >description</label>
+    <input type="textarea" name="description" id="description">
+    <input type="submit" name="button" value="enregistrer">
+    <input type="submit" name="button" value="supprimer">
+</form>
+<form method="post" action="">
+    {% csrf_token %}
+<ul>
+    {{ form.as_p }}
+</ul>
+<input type="submit" value="Submit Form"/>
+</form>
