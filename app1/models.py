@@ -8,7 +8,7 @@ class MyModel(models.Model):
     pub_date = models.DateTimeField('date published')
 
     def __str__(self):
-        return self.MyModel_text
+        return self .title
 
     def was_published_recently(self):
         return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
